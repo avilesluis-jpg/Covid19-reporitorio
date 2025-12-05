@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="covid19, pandemia, salud, impacto social"> 
+    <meta name="language" content="es">
+    <meta name="descrption" content="Esta pagina esta oriuentada a mostrar el impacto del covid19 en la sociedad">
+    <title>Impacto del Covid19 </title>
+    <style>
+      #Noticias {
+         display: none;
+      }
+      #Mortandad {
+      display: none;
+    }
+   </style>
+</head>
+<body style="background-color: rgb(62, 163, 221);">
+>
+   <header>
+      <section>
+        <img src="img/banner.jpeg" alt="Covid19 Banner" style="width: 100%; height: auto;" />
+        <H1> Impacto del covid en la sociedad</H1>
+       </section>
+       <nav>
+        <a href="#" onclick="mostrarInicio()">Inicio</a>
+        <a href="#" onclick="mostrarNoticias()">Noticias</a>
+         <a href="#" onclick="mostrarMortandad()">Mortandad</a>
+       </nav>
+   </header> 
+   <main>
+      <script>
+function mostrarNoticias() {
+      document.getElementById("introduccion").style.display = "none";
+      document.getElementById("Noticias").style.display = "block";
+      document.getElementById("Mortandad").style.display = "none";
+      window.scrollTo(0, 0);
+    }
+
+    function mostrarMortandad() {
+      document.getElementById("introduccion").style.display = "none";
+      document.getElementById("Noticias").style.display = "none";
+      document.getElementById("Mortandad").style.display = "block";
+      window.scrollTo(0, 0);
+    }
+
+    function mostrarInicio() {
+      document.getElementById("introduccion").style.display = "block";
+      document.getElementById("Noticias").style.display = "none";
+      document.getElementById("Mortandad").style.display = "none";
+      window.scrollTo(0, 0);
+    }
+  </script>
+     <section id="introduccion">
+        <h2> Introduccion</h2>
+        <p> </p>
+       El COVID-19 ha tenido un impacto significativo en la sociedad a nivel global. Desde su aparición a finales de 2019, el virus ha afectado todos los aspectos de 
+       la vida cotidiana, incluyendo la salud pública, la economía, la educación y las interacciones sociales. Las medidas implementadas para controlar la propagación del virus,
+        como los confinamientos, el distanciamiento social y el uso de mascarillas, han alterado la forma en que las personas viven y trabajan. Además, la pandemia ha puesto de 
+        relieve las desigualdades existentes en el acceso a la atención médica y ha acelerado la adopción de tecnologías digitales en diversos sectores. A medida que el mundo 
+        continúa enfrentando los desafíos del COVID-19, es crucial analizar y comprender su impacto en la sociedad para desarrollar estrategias efectivas de recuperación y 
+        resiliencia. </p>
+     </section>
+     <section id="Noticias">
+         <h2> Noticias </h2>
+         <article class="noticia">
+            <h3> Aumentan los casos de COVID19 </h3>
+            <p> En Guayaquil, varios consultorios privados reportan un aumento de casos de COVID-19. Entre los síntomas más comunes se registran tos seca prolongada, 
+               cansancio extremo y, en algunos pacientes, la necesidad de hospitalización. Que el COVID sigue circulando es algo evidente cada semana, no solo en los 
+               hospitales, sino también en las consultas particulares. Aunque en los últimos cuatro años los signos de la enfermedad habían perdido fuerza gracias a la 
+               vacunación y la inmunidad de rebaño, ahora se han intensificado nuevamente. Así lo señala el médico intensivista Henry Pinela. </p>
+               <img src="img/covid2.jpeg" alt="Covid19" />
+         </article>
+     </section>
+     <section id="Mortandad">
+         <h2> Mortandad </h2>
+         <article class="Mortandad">
+            <h3> Muertes durante el COVID19 </h3>
+            <p> El covid-19 ha causado la muerte de casi 15 millones de personas en todo el mundo, informó este jueves la Organización Munial de la Salud (OMS), que dijo 
+               que el número de muertes atribuidas directa o indirectamente a la pandemia fueron subestimadas.Los expertos de la organización estiman que 14,9 millones de 
+               muertes pueden asociarse a la pandemia, un total que incluye los 6,2 millones de decesos por covid notificados oficialmente a la OMS por sus 194 países miembros.
+               La OMS explicó que la nueva cifra se obtuvo calculando el exceso de mortalidad durante los dos primeros años de la pandemia.El exceso e mortalidad se entiende como 
+               la diferencia entre el número de muertes que se han producido y el número que se hubiera esperado en ausencia de la pandemia según los datos de años anteriores. </p>
+               <img src="img/covid1.jpeg" alt="Covid19" />
+
+                <p> Durante el año 2021 un total de 104,513 decesos por todas las causas y un exceso de 35,353 personas al compararlo con el promedio registrado entre 2015 y 2019. 
+                Eso significa una tasa de mortalidad del exceso de 201.9 por cada 100,000 habitantes. En comparación con el número de fallecidos del 2020, se produjo una reducción del 
+                9.9% de decesos en esee año. Y durante el año 2022, hasta el 10 de abril se registran un total de 26,974 decesos por todas las causas y 7,156 fallecidos en exceso respecto 
+                del promedio entre 2015 y 2019, lo que representa una tasa de mortalidad en exceso de 40.9  por cada 100,000 habitantes. </p>
+
+         </article>
+     </section>
+
+   </main>
+    <footer> 
+
+    </footer>
+</body>
+</html>
